@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.logo > img {
+    width: 64px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    grid-template-rows: 150px 1fr;
+}
+
+.menu {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    height: auto;
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 40px;
+    padding: 10px;
+    padding-right: 30px;
+    background-color: rgb(31, 82, 126);
+}
+
+.menu .icon {
+    width: 32px;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-left: 15px;
+    gap: 15px;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 3fr 300px;
+    background-color: rgb(46, 46, 46);
+    box-shadow: 0px 3px 2px -2px rgb(124, 123, 123);
+    position: relative;
+}
+
+.nav .icon {
+    width: 28px;
+}
+
+.profile-picture-small {
+    width: 32px;
+    height: auto;
+    align-self: center;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 64px 5fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 90%;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border: 2px solid rgb(50, 139, 216);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.account-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.content {
+    background-color: rgb(65, 65, 65);
+}
+
+.hello-section {
+    display: grid;
+    grid-template-columns: 80px 300px;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.hi-there{
+    display: flex;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    justify-items: left;
+    font-size: 12px;
+}
+
+.account-name {
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+}
+
+.profile-picture-medium {
+    width: 48px;
+    grid-row: 1 / 3;
+}
+
+.action-button {
+    border: none;
+    background-color: rgb(31, 82, 126);
+    color: white;
+    font-weight: 700;
+    width: 80px;
+    height: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: rgb(37, 105, 165);
+}
+
+.action-section {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+}
+
+.card .icon {
+    width: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: minmax(580px, 1fr) 300px;
+    gap: 40px;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px);
+    gap: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.card {
+    border-left: 6px solid orange;
+    background-color: rgb(46, 46, 46);
+    border-radius: 6px;
+    height: 210px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 30px;
+    box-shadow: 2px 2px 2px -2px rgb(124, 123, 123);
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.card p {
+    color: rgb(228, 228, 228);
+}
+
+.interactions {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.announcements-box {
+    background-color: rgb(46, 46, 46);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.announcement-text {
+    padding: 10px;
+    border-bottom: 1px solid rgb(141, 141, 141);
+}
+
+.announcement-text p {
+    color: rgb(228, 228, 228);
+}
+
+.announcement-text.last {
+    border: none;
+}
+
+.trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.trending-profiles {
+    background-color: rgb(46, 46, 46);
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile .profile-picture-small {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.profile-name {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.profile-project {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: rgb(228, 228, 228);
+}
